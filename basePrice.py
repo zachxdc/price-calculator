@@ -2,7 +2,7 @@
 def getProductPrices(productType, basePricesData):
     # define a array to save base price and product options
     productPricesData = []
-    # look through all price data, get price for each
+    # look through all price data, get a price for each item
     for item in basePricesData:
         # match the product type
         if item['product-type'] == productType:
@@ -12,7 +12,7 @@ def getProductPrices(productType, basePricesData):
             # Extract detailed option
             for optionSet in options:
                 for option in optionSet:
-                    # add possible 
+                    # save possible product options
                     allOptions.append(option)
             # saved all product options and based price from basePrice.json, used for get data later
             productPricesData.append({
@@ -28,27 +28,28 @@ def getCartOptions(cart):
         options.append(option)
     return options
 
-# To get base price for a single product
+# get base price for a single product
 def getBasePrice(cart, basePricesData):
     # match the product type
     productType = cart['product-type']
-    # call function to get all options for all products in the cart
+    # get all options for all products in the cart
     cartProductOptions = getCartOptions(cart)
-    # call function to get all product price for different options
+    # get all product prices for all options
     productPricesData = getProductPrices(productType, basePricesData)
     maxMatchCount = 0
     # set initial base price to avoid loss of base price
     basePrice = productPricesData[0]['basePrice']
-    # look though each product with spefic option in all product price data
+    # look through each product with a specific option in all product price data
     for productPrice in productPricesData:
         # get the all possible options as a list
         priceOptions = productPrice['options']
         currentMatchCount = 0
-        # Match price option with carted product option to get base price
+        # match the price option with the carted product option to get the base price
         for cartProductOption in cartProductOptions:
-            # Check the option of products in cart matches with the options in JSON file
+            # check the option of products in cart matches with the options in JSON file
             if cartProductOption in priceOptions:
                 currentMatchCount += 1
+                # track whether the product matches the most properties
                 if currentMatchCount > maxMatchCount:
                     basePrice = productPrice['basePrice']
                     maxMatchCount = currentMatchCount

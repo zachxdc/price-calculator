@@ -1,7 +1,7 @@
 from basePrice import getBasePrice
 
 class Cart:
-    #initialise a cart object
+    # initialise a cart object
     def __init__(self, cartData, basePricesData):
         self.cartData = cartData
         self.basePricesData = basePricesData
@@ -15,13 +15,13 @@ class Cart:
 
     def getCartTotalPrice(self):
         result = 0
-        #loop for looking through all items in cart
+        # loop for looking through all items in the cart
         for cart in self.cartData:
-            # get basePrice
+            # get a basePrice
             basePrice = getBasePrice(cart, self.basePricesData)
-            # get total price
+            # get a total price
             price = self.getOneProductPrice(cart, basePrice)
-            # Add result to current total price
+            # accumulate the result to the current total price
             result += price
         result = format(result / 100, '.2f')
         return result

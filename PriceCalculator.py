@@ -22,7 +22,6 @@ class Main:
         self.result = self.cart.getCartTotalPrice()
         return self.result
     
-#
 if __name__ == '__main__':
     main = Main()
     main.execute()
