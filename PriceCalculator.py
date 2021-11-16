@@ -1,10 +1,6 @@
 import sys
 from readDataFile import readDataFile
 
-"""
-This program is to calculate the total price of the cart that provided by JSON file
-"""
-
 class Main:
     def __init__(self):
         self.checkParams()
@@ -16,6 +12,10 @@ class Main:
         else:
             print('Please provide command as: python [PriceCalculator-path] [cart-path] [base-prices-path]')
             sys.exit(0)
+
+    def execute(self):
+        self.cartData = readDataFile(self.cartPath)
+        self.basePricesData = readDataFile(self.basePricesPath)
     
 #
 if __name__ == '__main__':
