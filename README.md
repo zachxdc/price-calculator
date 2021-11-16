@@ -8,19 +8,33 @@ The program is to calculate the total price of all items in the cart
 - Python 3.0.0 or later
 
 ## Installation
-- aaa
+1. Clone the project
+
+    `git clone https://github.com/bobcqs/folder-structure-with-file-count`
+
+2. Enter the project folder
+
+    `cd price-calculator`
+
+3. Install project dependencies
+
+	`Follow instruction here: https://www.python.org/downloads/release/python-368/`
+
+4. quickly checked python version by: 
+
+	`python3 --version`
 
 ## Running instruction
 
-- Run with python command
+- Run with python command:
 
         python3  PriceCalculator.py [cart_json_path] [base_price_json_path]
 
-- Run one unit test for the program
+- Run one unit test for the program:
 
         python3 [test_file_path]
 
-- Run all unit tests in a directory
+- Run all unit tests in a directory:
 
         python3 -m unittest [test_directory]
 
