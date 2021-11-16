@@ -20,7 +20,6 @@ class Main:
         self.basePricesData = readDataFile(self.basePricesPath)
         self.cart = cart.Cart(self.cartData, self.basePricesData)
         self.result = self.cart.getCartTotalPrice()
-        print(self.result)
         return self.result
     
 #

@@ -52,7 +52,6 @@ class TestCart(unittest.TestCase):
         self.assertEqual(basePrice.getCartOptions(cart) , ['small', 'white']) 
 
     def test_getBasePrice(self):
-        print(basePrice.getBasePrice(self.cart, self.basePricesData))
         self.assertEqual(basePrice.getBasePrice(self.cart, self.basePricesData) , 3800) 
 
 if __name__ == '__main__':
