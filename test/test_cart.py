@@ -4,7 +4,8 @@ import cart
 import unittest
 
 class TestCart(unittest.TestCase):
-    
+
+    # initialise the testing data
     cartData = [
         {
             "product-type": "hoodie",
@@ -50,6 +51,7 @@ class TestCart(unittest.TestCase):
         }
     ]
 
+    # test each function then check if the return value matches the expected result
     def test_getOneProductPrice(self):
         self.assertEqual(cart.Cart(self.cartData, self.basePricesData).getOneProductPrice(self.cartData[0], 3800), 4560)
 

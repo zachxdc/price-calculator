@@ -1,6 +1,6 @@
 # get all base prices for different product options
 def getProductPrices(productType, basePricesData):
-    # define a array to save base price and product options
+    # define a array to save base prices and product options
     productPricesData = []
     # look through all price data, get a price for each item
     for item in basePricesData:

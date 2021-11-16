@@ -6,8 +6,10 @@ import os
 
 class TestCart(unittest.TestCase):
 
+    # set the path to make program path be adapatable for different os
     path = os.getcwd() + '/cart-json/cart-4560.json'
-    
+
+    # initialise the testing data
     fileData = [
         {
             "product-type": "hoodie",
@@ -21,6 +23,7 @@ class TestCart(unittest.TestCase):
         }
     ]
 
+    # test each function then check if the return value matches the expected result
     def test_readDataFile(self):
         self.assertEqual(readDataFile.readDataFile(self.path), self.fileData)
 

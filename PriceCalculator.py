@@ -3,6 +3,7 @@ import cart
 from readDataFile import readDataFile
 
 class Main:
+    
     def __init__(self):
         self.checkParams()
 
@@ -20,6 +21,7 @@ class Main:
         self.basePricesData = readDataFile(self.basePricesPath)
         self.cart = cart.Cart(self.cartData, self.basePricesData)
         self.result = self.cart.getCartTotalPrice()
+        print(self.result)
         return self.result
     
 if __name__ == '__main__':

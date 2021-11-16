@@ -5,6 +5,7 @@ import unittest
 
 class TestCart(unittest.TestCase):
 
+    # initialise the testing data
     cart = {
         "product-type": "hoodie",
         "options": {
@@ -37,19 +38,13 @@ class TestCart(unittest.TestCase):
         }
     ]
 
+    # test each function then check if the return value matches the expected result
     def test_getProductPrices(self):
         self.assertEqual(basePrice.getProductPrices('hoodie', self.basePricesData) , [
             {'basePrice': 3800, 'options': ["white", "dark","small", "medium"]}]) 
 
     def test_getCartOptions(self):
-        cart = {
-            "product-type": "hoodie",
-            "options": {
-                "size": "small",
-                "colour": "white",
-            }
-        }
-        self.assertEqual(basePrice.getCartOptions(cart) , ['small', 'white']) 
+        self.assertEqual(basePrice.getCartOptions(self.cart) , ['small', 'white']) 
 
     def test_getBasePrice(self):
         self.assertEqual(basePrice.getBasePrice(self.cart, self.basePricesData) , 3800) 
