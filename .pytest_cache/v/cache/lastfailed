@@ -1,4 +1,5 @@
 {
+  "PriceCalculator.py": true,
   "test/__pycache__/test_cart.py": true,
   "test/__pycache__/test_readDataFile.py": true,
   "test/test_PriceCalculator.py::test_execute[../cart-json/cart-11356.json-113.56]": true,
