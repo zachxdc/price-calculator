@@ -1,0 +1,13 @@
+[
+  "test/test_PriceCalculator.py::test_execute[../cart-json/cart-11356.json-113.56]",
+  "test/test_PriceCalculator.py::test_execute[../cart-json/cart-4560.json-45.60]",
+  "test/test_PriceCalculator.py::test_execute[../cart-json/cart-9363.json-93.63]",
+  "test/test_PriceCalculator.py::test_execute[../cart-json/cart-9500.json-95.00]",
+  "test/test_basePrice.py::test_getBasePrice",
+  "test/test_basePrice.py::test_getCartOptions",
+  "test/test_basePrice.py::test_getProductPrices",
+  "test/test_cart.py::test_getCartTotalPrices",
+  "test/test_cart.py::test_getOneProductPrice",
+  "test/test_readDataFile.py::test_readDataFile",
+  "test_readDataFile.py::test_readDataFile"
+]
