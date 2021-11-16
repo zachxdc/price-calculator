@@ -28,7 +28,7 @@ The program is to calculate the total price of all items in the cart
 
 - Run with python command:
 
-        python3  PriceCalculator.py [cart_json_path] [base_price_json_path]
+        `python3  PriceCalculator.py [cart_json_path] [base_price_json_path]`
 
 - Run one unit test for the program:
 
