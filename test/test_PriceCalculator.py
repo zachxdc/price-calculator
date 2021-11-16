@@ -1,6 +1,7 @@
 import sys
 sys.path.append(sys.path[0][:-4])
 import PriceCalculator
+<<<<<<< HEAD
 import pytest
 
 
@@ -13,3 +14,11 @@ def test_execute(cartPath, expected):
                 '../base-prices/base-prices.json']
     main = PriceCalculator.Main()
     assert main.execute() == expected
+=======
+
+def test_checkParams():
+    assert 1 == 1
+
+def test_execute():
+    assert 1 == 1
+>>>>>>> 58e8bcf1316240572372132d35972abc057a45c0
