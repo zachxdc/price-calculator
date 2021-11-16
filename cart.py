@@ -4,6 +4,12 @@ class Cart:
     def __init__(self, cartData, basePricesData):
         self.cartData = cartData
         self.basePricesData = basePricesData
+    
+    def getOneProductPrice(self, cart, basePrice):
+        markup = cart['artist-markup'] / 100
+        quantity = cart['quantity']
+        price = (basePrice + round(basePrice * markup)) * quantity
+        return price
 
     def getCartTotalPrice(self):
         result = 0

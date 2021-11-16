@@ -19,3 +19,20 @@ def getCartOptions(cart):
     for option in cart['options'].values():
         options.append(option)
     return options
+
+def getBasePrice(cart, basePricesData):
+    productType = cart['product-type']
+    cartproductOptions = getCartOptions(cart)
+    productPricesData = getProductPrices(productType, basePricesData)
+    maxMatchCount = 0
+    basePrice = productPricesData[0]['basePrice']
+    for productPrice in productPricesData:
+        priceOptions = productPrice['options']
+        currentMatchCount = 0
+        for cartproductOption in cartproductOptions:
+            if cartproductOption in priceOptions:
+                currentMatchCount += 1
+                if currentMatchCount > maxMatchCount:
+                    basePrice = productPrice['basePrice']
+                    maxMatchCount = currentMatchCount
+    return basePrice
