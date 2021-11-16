@@ -1,22 +1,28 @@
 import sys
 sys.path.append(sys.path[0][:-4])
 import readDataFile
+import unittest
+import os
 
-path = '../cart-json/cart-4560.json'
+class TestCart(unittest.TestCase):
 
-fileData = [
-    {
-        "product-type": "hoodie",
-        "options": {
-            "size": "small",
-            "colour": "white",
-            "print-location": "front"
-        },
-        "artist-markup": 20,
-        "quantity": 1
-    }
-]
+    path = os.getcwd() + '/cart-json/cart-4560.json'
+    
+    fileData = [
+        {
+            "product-type": "hoodie",
+            "options": {
+                "size": "small",
+                "colour": "white",
+                "print-location": "front"
+            },
+            "artist-markup": 20,
+            "quantity": 1
+        }
+    ]
 
+    def test_readDataFile(self):
+        self.assertEqual(readDataFile.readDataFile(self.path), self.fileData)
 
-def test_readDataFile():
-    assert readDataFile.readDataFile(path) == fileData
+if __name__ == '__main__':
+    unittest.main()

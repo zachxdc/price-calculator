@@ -13,31 +13,33 @@ class TestCart(unittest.TestCase):
         }
     }
 
-    basePricesData = [{
+    basePricesData = [
+        {
         "product-type": "hoodie",
         "options": {
             "colour": ["white", "dark"],
             "size": ["small", "medium"]
         },
         "base-price": 3800
-    }, {
-        "product-type": "sticker",
-        "options": {
-            "size": ["xl"]
-        },
-        "base-price": 1417
-    },
+        }, 
         {
-        "product-type": "leggings",
-        "options": {
+            "product-type": "sticker",
+            "options": {
+                "size": ["xl"]
+            },
+            "base-price": 1417
         },
-        "base-price": 5000
-    }]
+        {
+            "product-type": "leggings",
+            "options": {
+            },
+            "base-price": 5000
+        }
+    ]
 
     def test_getProductPrices(self):
         self.assertEqual(basePrice.getProductPrices('hoodie', self.basePricesData) , [
             {'basePrice': 3800, 'options': ["white", "dark","small", "medium"]}]) 
-
 
     def test_getCartOptions(self):
         cart = {

@@ -2,6 +2,7 @@
   "PriceCalculator.py": true,
   "test/__pycache__/test_cart.py": true,
   "test/__pycache__/test_readDataFile.py": true,
+  "test/test_PriceCalculator.py": true,
   "test/test_PriceCalculator.py::test_execute[../cart-json/cart-11356.json-113.56]": true,
   "test/test_PriceCalculator.py::test_execute[../cart-json/cart-4560.json-45.60]": true,
   "test/test_PriceCalculator.py::test_execute[../cart-json/cart-9363.json-93.63]": true,
