@@ -21,6 +21,7 @@ class Main:
         self.cart = cart.Cart(self.cartData, self.basePricesData)
         self.result = self.cart.getCartTotalPrice()
         print(self.result)
+        return self.result
     
 #
 if __name__ == '__main__':
