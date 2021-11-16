@@ -1,9 +1,30 @@
 # Redbubble Coding Test - Price Calculator
 
+## Description
 
-This project is a simple command-line program that can first reads and process JSON information about base prices for different products and a shopping cart, and then calculate the total price of the shopping cart given the information from the base price
+aaaaaa
 
-## Basic Structure of the Program
+## Prerequisite
+- Python 3.0.0 or later
+
+## Installation
+- aaa
+
+## Running instruction
+
+- Run with python command
+
+        python3  PriceCalculator.py [cart_json_path] [base_price_json_path]
+
+- Run one unit test for the program
+
+	python3 [test_file_path]
+
+- Run all unit tests in a directory
+
+        python3 -m unittest [test_directory]
+
+## File Structure
 
     .
     ├── base-prices
@@ -27,23 +48,4 @@ This project is a simple command-line program that can first reads and process J
     ├── readDataFile.py            
     └── README.md
 
-
-## Prerequisite
-- Python 3.0.0 or later
-
-## Installation
-- aaa
-
-## Running instruction
-
-- Run with python command
-
-        python3  PriceCalculator.py [cart_json_path] [base_price_json_path]
-
-- Run one unit test for the program
-
-	python3 [test_file_path]
-
-- Run all unit tests in a directory
-
-        python3 -m unittest [test_directory]
+## Solution design concept
