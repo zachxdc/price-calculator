@@ -2,7 +2,7 @@
 
 ## Description
 
-aaaaaa
+The program is to calculate the total price of all items in the cart
 
 ## Prerequisite
 - Python 3.0.0 or later
@@ -18,7 +18,7 @@ aaaaaa
 
 - Run one unit test for the program
 
-	python3 [test_file_path]
+        python3 [test_file_path]
 
 - Run all unit tests in a directory
 
@@ -28,20 +28,20 @@ aaaaaa
 
     .
     ├── base-prices
-    base-prices.json          
+    │   ├──  base-prices.json          
     ├── cart-json
-    ├── cart-4560.json
-    ├──cart-9363.json
-    ├──cart-9500.json
-    ├──cart-11356.json                   
+    │   ├──  cart-4560.json
+    │   ├── cart-9363.json
+    │   ├── cart-9500.json
+    │   ├── cart-11356.json                   
     ├── schema
-    base-prices.schema.json
-    cart.schema.json        
+    │   ├──  base-prices.schema.json
+    │   ├──  cart.schema.json        
     ├── test
-    test_basePrice.py
-    test_cart.py
-    test_PriceCalculator.py
-    test_readDataFile.py                
+    │   ├──  test_basePrice.py
+    │   ├──  test_cart.py
+    │   ├──  test_PriceCalculator.py
+    │   ├──  test_readDataFile.py                
     ├── base_price.py             
     ├── cart.py                
     ├── PriceCalculator.py                  
