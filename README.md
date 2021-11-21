@@ -12,7 +12,7 @@ The program is to calculate the total price of all items in the cart. It can loa
 
 1. Clone the project: 
 
-   `git clone https://github.com/bobcqs/folder-structure-with-file-count`
+   `git clone https://github.com/bobcqs/folder-structure-with-file-count.git`
 
 2. Enter the project folder: 
 
