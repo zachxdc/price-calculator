@@ -1,4 +1,4 @@
-# Redbubble Coding Test - Price Calculator
+# Price Calculator
 
 ## Description
 
