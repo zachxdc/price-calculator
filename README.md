@@ -44,7 +44,7 @@ The program is to calculate the total price of all items in the cart. It can loa
 
     .
     ├── base-prices
-    │   ├──  base-prices.json
+    │   ├── base-prices.json
     ├── cart-json
     │   ├── cart-4560.json
     │   ├── cart-9363.json
